@@ -1,68 +1,82 @@
-📊 Sentiment Analysis Dashboard
-An interactive dashboard built with Streamlit for performing sentiment analysis on text data such as reviews, tweets, or comments.
-Supports CSV uploads, real-time text input, visualizations, and downloadable results.
+💬 Sentiment Analysis Dashboard
 
-🚀 Features
-✅ Upload CSV dataset and auto-analyze sentiments
-✅ Real-time text input for sentiment detection
-✅ Positive / Neutral / Negative classification
-✅ Interactive bar chart, pie chart, and sample viewer
-✅ Optional WordCloud generation
-✅ Download analyzed dataset as CSV
-✅ Modular, clean Python code (easy to customize)
+An interactive NLP-powered dashboard to analyze and visualize sentiments from text datasets — built with Streamlit + VADER/TextBlob.
 
-🛠️ Tech Stack
-Python 3.8+
+✨ Features
+📂 CSV Upload — Analyze reviews, tweets, or comments from your dataset
 
-Streamlit for dashboard UI
+⚡ Real-Time Sentiment Detection — Enter text and get instant classification
 
-VADER (NLTK) & TextBlob for sentiment scoring
+📊 Visual Analytics — Pie charts, bar charts, and sentiment statistics
 
-pandas, matplotlib, seaborn, wordcloud for data processing & visualization
+☁ WordClouds — See the most frequent words for each sentiment class
+
+📥 Export Results — Download processed data as CSV
+
+🛠 Customizable — Easily swap sentiment models or visualizations
+
+🖼 Preview
+Dashboard View	WordCloud Example
+
+🛠 Tech Stack
+Language: Python 🐍
+
+Framework: Streamlit
+
+NLP Models: VADER (NLTK) & TextBlob
+
+Data Processing: pandas
+
+Visualization: matplotlib, seaborn, wordcloud
 
 📂 Project Structure
 bash
 Copy
 Edit
 sentiment-analysis-dashboard/
-│── app.py              # Main Streamlit app  
-│── utils.py            # Sentiment analysis logic & helpers  
-│── sample_data.csv     # Example dataset  
-│── requirements.txt    # Required dependencies  
-│── README.md           # Project documentation  
-📦 Installation & Running
+│── app.py              # Main Streamlit app
+│── utils.py            # Helper functions & sentiment logic
+│── sample_data.csv     # Example dataset
+│── requirements.txt    # Dependencies
+│── README.md           # Documentation
+🚀 Getting Started
+1️⃣ Clone the Repository
 bash
 Copy
 Edit
-# 1. Clone the repository
 git clone https://github.com/<your-username>/sentiment-analysis-dashboard.git
 cd sentiment-analysis-dashboard
-
-# 2. (Optional) Create virtual environment
+2️⃣ Create Virtual Environment (Optional but Recommended)
+bash
+Copy
+Edit
 python -m venv .venv
-# Windows
+# Activate (Windows)
 .venv\Scripts\activate
-# macOS / Linux
+# Activate (Mac/Linux)
 source .venv/bin/activate
-
-# 3. Install dependencies
+3️⃣ Install Requirements
+bash
+Copy
+Edit
 pip install -r requirements.txt
-
-# 4. Run the dashboard
+4️⃣ Run the Dashboard
+bash
+Copy
+Edit
 streamlit run app.py
 📊 Example Output
-Sentiment Distribution
+Sentiment Distribution:
 
-Positive: 60%
+✅ Positive: 60%
 
-Neutral: 25%
+😐 Neutral: 25%
 
-Negative: 15%
+❌ Negative: 15%
 
-Live Input Example
+Live Prediction:
 
-"I absolutely love this product!" → Positive
+"I absolutely love this product!" → Positive 💚
 
-📝 License
-This project is licensed under the MIT License – feel free to use and modify with attribution.
-
+📜 License
+Licensed under the MIT License — you’re free to use, modify, and distribute.
